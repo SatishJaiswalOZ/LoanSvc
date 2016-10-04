@@ -7,6 +7,19 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoanSvc", "LoanSvc\LoanSvc.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoanSvc.Tests", "LoanSvc.Tests\LoanSvc.Tests.csproj", "{7EA0A867-9690-4760-B505-8FAA568296D1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{78699D12-8866-49D7-A7FB-6594ACB29FE5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{70D2C230-0359-44AE-9018-D058D043B39C}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{A0A7F85E-51D4-403B-A79D-BBC549186283}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\LoanSvc.json = PublishScripts\Templates\LoanSvc.json
+		PublishScripts\Templates\LoanSvc.param.dev.json = PublishScripts\Templates\LoanSvc.param.dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +37,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{70D2C230-0359-44AE-9018-D058D043B39C} = {78699D12-8866-49D7-A7FB-6594ACB29FE5}
+		{A0A7F85E-51D4-403B-A79D-BBC549186283} = {78699D12-8866-49D7-A7FB-6594ACB29FE5}
 	EndGlobalSection
 EndGlobal
