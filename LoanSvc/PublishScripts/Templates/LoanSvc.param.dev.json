@@ -1,0 +1,29 @@
+{
+  "siteName": {
+    "value": "LoanSvc"
+  },
+  "hostingPlanName": {
+    "value": "LoanAppSvcPlan"
+  },
+  "siteLocation": {
+    "value": "South India"
+  },
+  "sku": {
+    "value": "Free"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "siteMode": {
+    "value": "Limited"
+  },
+  "computeMode": {
+    "value": "0"
+  },
+  "subscriptionId": {
+    "value": "55c9ac97-12f9-41e4-b633-1f940fe29a3c"
+  },
+  "resourceGroup": {
+    "value": "Default-ApplicationInsights-CentralUS"
+  }
+}

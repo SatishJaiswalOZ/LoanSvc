@@ -1,20 +1,16 @@
-﻿using System;
+﻿using Owin;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.Owin;
-using Owin;
+using System.Web;
 using System.Web.Http;
-using System.Net.Http.Headers;
-
-[assembly: OwinStartup("LoanSvcApi",typeof(LoanSvc.Startup))]
 
 namespace LoanSvc
 {
-    public partial class Startup
+    public class SelfHost
     {
         public void Configuration(IAppBuilder app)
         {
-            ConfigureAuth(app);
             // Configure Web API for self-host. 
             var config = new HttpConfiguration();
             config.Routes.MapHttpRoute(
@@ -25,7 +21,9 @@ namespace LoanSvc
                         id = RouteParameter.Optional
                     }
                 );
+
             app.UseWebApi(config);
         }
+
     }
 }
